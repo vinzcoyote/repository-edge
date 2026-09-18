@@ -1,12 +1,7 @@
 ---
 channel: edge
-
 addons:
   ser2net:
-    repository: jhollowe-addons/addon-ser2net
+    repository: vinzcoyote/addon-ha-ser2net
     target: ser2net
-    image: ghcr.io/jhollowe-addons/ser2net/{arch}
-  mqtt-io:
-    repository: jhollowe-addons/addon-mqtt-io
-    target: mqtt-io
-    image: ghcr.io/jhollowe-addons/mqtt-io/{arch}
+    image: ghcr.io/vinzcoyote/ser2net/{arch}
