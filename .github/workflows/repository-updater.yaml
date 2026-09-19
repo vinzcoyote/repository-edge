@@ -16,7 +16,7 @@ jobs:
 
     steps:
       - name: Run Repository Updater
-        uses: homeassistant-apps/action-repository-updater@v1
+        uses: hassio-addons/repository-updater@v11
         with:
           addon: ser2net
           repository: ${{ github.repository }}
