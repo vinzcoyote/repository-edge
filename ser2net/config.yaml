@@ -1,5 +1,5 @@
 name: ser2net server
-version: d5125da
+version: 8ff24a6
 slug: ser2net
 description: 'Expose serial ports over the network, including TCP and RFC2217 support
 
