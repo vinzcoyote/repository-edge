@@ -18,6 +18,6 @@ jobs:
       - name: Run Repository Updater
         uses: hassio-addons/repository-updater@v1
         with:
-          app: ser2net
+          addon: ser2net
           repository: ${{ github.repository }}
           token: ${{ secrets.UPDATER_TOKEN }}
