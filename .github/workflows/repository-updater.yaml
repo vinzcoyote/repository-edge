@@ -17,6 +17,11 @@ jobs:
     steps:
       - name: Run Repository Updater
         uses: hassio-addons/repository-updater@v1
+        env:
+          GIT_AUTHOR_NAME: vinzcoyote
+          GIT_AUTHOR_EMAIL: 41898282+vinzcoyote@users.noreply.github.com
+          GIT_COMMITTER_NAME: vinzcoyote
+          GIT_COMMITTER_EMAIL: 41898282+vinzcoyote@users.noreply.github.com
         with:
           addon: ser2net
           repository: ${{ github.repository }}
