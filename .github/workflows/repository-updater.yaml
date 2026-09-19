@@ -15,20 +15,9 @@ jobs:
       contents: write
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Commit update
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
-          git add .
-
-          if git diff --cached --quiet; then
-            echo "No changes to commit"
-            exit 0
-          fi
-
-          git commit -m "Update repository"
-          git push
+      - name: Run Repository Updater
+        uses: homeassistant-apps/action-repository-updater@v1
+        with:
+          addon: ser2net
+          repository: ${{ github.repository }}
+          token: ${{ secrets.UPDATER_TOKEN }}
