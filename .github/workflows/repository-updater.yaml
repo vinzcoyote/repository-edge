@@ -16,8 +16,8 @@ jobs:
 
     steps:
       - name: Run Repository Updater
-        uses: hassio-addons/repository-updater@v11
+        uses: hassio-addons/repository-updater@v1
         with:
-          addon: ser2net
+          app: ser2net
           repository: ${{ github.repository }}
           token: ${{ secrets.UPDATER_TOKEN }}
