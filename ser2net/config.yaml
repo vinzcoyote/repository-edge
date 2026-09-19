@@ -41,4 +41,4 @@ schema:
   no_break: bool
   max_connections: int
   enable_admin_interface: bool
-image: ghcr.io/vinzcoyote/ser2net/{arch}
+image: ghcr.io/vinzcoyote/ser2net
