@@ -1,5 +1,5 @@
 ---
-channel: edge
+channel: stable
 addons:
   ser2net:
     repository: vinzcoyote/addon-ha-ser2net
